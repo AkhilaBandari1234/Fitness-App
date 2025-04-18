@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device width,initial-scale=1.0">
+        <title>Table</title>
+        <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <style>
+            table{
+                font-family:Arial;
+            }
+            caption{
+                text-align:left;
+                margin-bottom:10px;
+                font-weight:bold;
+                color:gray;
+            }
+            .img-team{
+                width:20px;
+                padding-right:10px;
+            }
+            .won{
+                display:inline-block;
+                width:15px;
+                height:15px;
+                border-radius:15px;
+                border:1px solid green;
+                padding:5px;
+                text-align:center;
+                font-size:14px;
+                color:green;
+            }
+            .lost{
+                display:inline-block;
+                width:15px;
+                height:15px;
+                border-radius:15px;
+                border:1px solid red;
+                padding:5px;
+                text-align:center;
+                font-size:14px;
+                color:red;
+            }
+            .bi bi-dash
+            .bi-caret-up-fill {
+                color: green;
+            }
+            .bi-caret-down-fill{
+                color:red;
+            }
+        </style>
+
+    </head>
+    <body>
+        <table width="100%" border="0" rules="row" frame="void" cellspacing="5" cellpadding="10">
+            <caption>IPL Points Table</caption>
+            <colgroup span="11"></colgroup>
+            <thead>
+                <tr>
+                    <th colspan="12">IPL-2025</th>
+                </tr>
+                <tr>
+                   <th width="20">POS</th> 
+                   <th>&nbsp;</th>
+                   <th>TEAM</th>
+                   <th>P</th>
+                   <th>W</th>
+                   <th>L</th>
+                   <th>NR</th>
+                   <th>NRR</th>
+                   <th>FOR</th>
+                   <th>AGAINST</th>
+                   <th>PTS</th>
+                   <th width="auto">RECENT FORM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr align="center" valign="center">
+                    <td>1</td>
+                    <td><span class="bi bi-dash"></span></td>
+                    <td><img src="./public/images/GT.png" align="left" class="img-team"><span>GT</span></td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1.081</td>
+                    <td>1148/114.3</td>
+                    <td>1069/119.3</td>
+                    <td>8</td>
+                    <td align="center">
+                        <span class="lost">L</span>
+                        <span class="won">W</span>
+                        <span class="won">W</span>
+                        <span class="won">W</span>
+                        <span class="won">W</span>
+                    </td>
+                </tr>
+                <tr align="center" valign="center">
+                    <td>2</td>
+                    <td><span class="bi bi-dash"></span></td>
+                    <td><img src="./public/images/DC.png" align="left" class="img-team"><span>DC</span></td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0.899</td>
+                    <td>922/93.2</td>
+                    <td>898/100.0</td>
+                    <td>8</td>
+                    <td align="center" valign="center">
+                        <span class="lost">L</span>
+                        <span class="won">W</span>
+                        <span class="won">W</span>
+                        <span class="won">W</span>
+                        <span class="won">W</span>
+                    </td>
+                </tr>
+                <tr align="center" valign="center">
+                    <td>3</td>
+                    <td><span class="bi bi-dash"></span></td>
+                    <td><img src="./public/images/RCB.png" align="left" class="img-team"><span>RCB</span></td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td> 
+                    <td>0.672</td>
+                    <td>1101/113.5</td>  
+                    <td>1041/115.4</td>  
+                    <td>8</td>  
+                    <td align="center" valign="center">
+                        <span class="won">W</span>
+                        <span class="lost">L</span>
+                        <span class="won">W</span>
+                        <span class="lost">L</span>
+                        <span class="won">W</span>
+                    </td>         
+                </tr>
+                <tr align="center" valign="center">
+                    <td>4</td>
+                    <td><span class="bi bi-caret-up-fill"> </span></td>
+                    <td><img src="./public/images/PBKS.png" align=left class="img-team"><span>PBKS</span></td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0.172</td>
+                    <td>1150/116.2</td>
+                    <td>1151/118.3</td>
+                    <td>8</td>
+                    <td align="center" valign="center">
+                        <span class="won">W</span>
+                        <span class="lost">L</span>
+                        <span class="won">W</span>
+                        <span class="lost">L</span>
+                        <span class="won">W</span>
+                    </td>
+                </tr>
+                <tr align="center" valign="center">
+                    <td>5</td>
+                    <td><span class="bi bi-caret-down-fill"></span></td>
+                    <td><img src="./public/images/LSG.png" align=left class="img-team"><span>LSG</span></td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0.086</td>
+                    <td>1366/135.4</td>
+                    <td>1351/135.2</td>
+                    <td>8</td>
+                    <td align="center" valign="center">
+                        <span class="lost">L</span>
+                        <span class="won">W</span>
+                        <span class="won">W</span>
+                        <span class="won">W</span>
+                        <span class="lost">L</span>
+                    </td>
+                </tr>
+                <tr align="center" valign="center">
+                    <td>6</td>
+                    <td><span class="bi bi-caret-down-fill"></span></td>
+                    <td><img src="./public/images/KKR.png" align=left class="img-team"><span>KKR</span></td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>0.547</td>
+                    <td>1079/127.4</td>
+                    <td>1021/129.1</td>
+                    <td>6</td>
+                    <td align="center" valign="center">
+                        <span class="lost">L</span>
+                        <span class="won">W</span>
+                        <span class="lost">L</span>
+                        <span class="won">W</span>
+                        <span class="lost">L</span>
+                    </td>
+
+                </tr>
+                <tr align="center" valign="center">
+                    <td>7</td>
+                    <td><span class="bi bi-dash"></span></td>
+                    <td><img src="./public/images/MI.png" align=left class="img-team"><span>MI</span></td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>0.104</td>
+                    <td>1041/112.5</td>
+                    <td>1087/119.1</td>
+                    <td>4</td>
+                    <td align="center" valign="center">
+                        <span class="won">W</span>
+                        <span class="lost">L</span>
+                        <span class="lost">L</span>
+                        <span class="won">W</span>
+                        <span class="lost">L</span> 
+                    </td>
+                </tr>
+                <tr align="center" valign="center">
+                    <td>8</td>
+                    <td><span class="bi bi-dash"></span></td>
+                    <td><img src="./public/images/RR.png" align=left class="img-team"><span>RR</span></td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>-0.714</td>
+                    <td>1300/140.0</td>
+                    <td>1350/135.0</td>
+                    <td>4</td>
+                    <td align="center" valign="center">
+                        <span class="lost">L</span>
+                        <span class="lost">L</span>
+                        <span class="lost">L</span>
+                        <span class="won">W</span>
+                        <span class="won">W</span>   
+                    </td>
+                </tr>
+                <tr align="center" valign="center">
+                    <td>9</td>
+                    <td><span class="bi bi-dash"></span></td>
+                    <td><img src="./public/images/SRH.png" align=left class="img-team"><span>SRH</span></td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>-1.245</td>
+                    <td>1158/118.3</td>
+                    <td>1199/108.5</td>
+                    <td>4</td>
+                    <td align="center" valign="center">
+                        <span class="won">W</span>
+                        <span class="lost">L</span>
+                        <span class="lost">L</span>
+                        <span class="lost">L</span>
+                        <span class="lost">L</span> 
+                        
+                    </td>
+                </tr>
+                <tr align="center" valign="center">
+                    <td>10</td>
+                    <td><span class="bi bi-dash"></span></td>
+                    <td><img src="./public/images/CSK.png" align=left class="img-team"><span>CSK</span></td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>-1.276</td>
+                    <td>1110/130.1</td>
+                    <td>1208/130.1</td>
+                    <td>4</td>
+                    <td align="center" valign="center">
+                        <span class="won">W</span>
+                        <span class="lost">L</span>
+                        <span class="lost">L</span>
+                        <span class="lost">L</span>
+                        <span class="lost">L</span> 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
