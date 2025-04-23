@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .terms+label{
+            color:red;
+        }
+        .terms:checked+label{
+            color:green;
+        }
+        .terms~button{
+            display:none;
+        }
+        .terms:checked~button{
+            display:block;
+        }
+        .preview+img{
+            display:none;
+        }
+        .preview:checked+img{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <input type="checkbox" class="preview">preview
+        <img src="./Public/images/men-fashion.jpg" width="100" height="100">
+        <dt>Terms of service</dt>
+        <dd>
+            <textarea row="4" cols="40" disabled>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur ullam illo nulla eos eligendi perferendis repudiandae nobis numquam similique ad debitis iusto sint laboriosam, quaerat vitae incidunt quod, dolore reprehenderit?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente voluptatibus nihil provident facere ducimus, eligendi ipsam facilis quam tempora tenetur similique vitae asperiores non eum sequi corporis, quibusdam velit neque?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem eius quas expedita quos omnis quidem voluptatem nostrum aspernatur velit? Asperiores facere quas pariatur provident? Temporibus ab obcaecati voluptatem expedita autem!</textarea>
+        </dd>
+        <dd>
+            <input type="checkbox" class="terms"><label>I Accept</label>
+            <br><br>
+            <button>Submit</button>
+        </dd>
+    </dl>
+</body>
+</html>
