@@ -1,0 +1,11 @@
+.ticket{
+    background-color:yellow;
+    padding:20px;
+    border:4px double red;
+}
+dt{
+    font-weight:bold;
+    background-color:red;
+    color:white;
+    width:200px;
+}
