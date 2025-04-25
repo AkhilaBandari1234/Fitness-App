@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .user{
+            border-left:none;
+            border-right:none;
+            border-top:none;
+            outline:none;
+        }
+    </style>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        ul{
+            list-style:none;
+        }
+        meter{
+            width:200px;
+            height:20px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <ul>
+            <li><span>5<span class="bi bi-star-fill"></span></span><meter min="1" max="5"value="5"></meter></li>
+            <li><span>4<span class="bi bi-star-fill"></span></span><meter min="1" max="5" value="5"></meter></li>
+            <li><span>2<span class="bi bi-star-fill"></span></span><meter min="1" max="100" value="100" low="40" high="80"></meter></li>
+            <li><span>1<span class="bi bi-star-fill"></span></span><meter min="1" max="100" value="100" low="60" high="80"></meter></li>
+        </ul>
+    </form>
+</body>
+</html>
