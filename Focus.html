@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .UserName+div{
+        display:none;
+     }  
+     .UserName:focus+div{
+        display:block;
+        font-size:12px;
+        color:red;
+     } 
+     .UserName:focus{
+        border:1px solid red;
+        box-shadow:2px 2px 2px red;
+        outline:none;
+        margin-bottom:5px;
+     }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd>
+            <input type="text" value="John" class="UserName" placeholder="Name in Block Letters">
+            <div>Name in Block Letters</div>
+        </dd>
+    </dl>
+</body>
+</html>
