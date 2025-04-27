@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .user{
+                border-left:none;
+                border-right:none;
+                border-top:none;
+                outline:none;
+            }
+        </style>
+        <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <style>
+            progress{
+                width:200px;
+                height:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <dl>
+                <dt>Preparing for download</dt>
+                <dt><progress></progress></dt>
+                <dt>40% Downloaded</dt>
+                <dd>
+                    <progress min="1" max="100" value="40"></progress>
+                </dd>
+            </dl>
+        </form>
+    </body>
+</html>
