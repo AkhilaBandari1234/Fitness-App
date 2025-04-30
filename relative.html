@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Men-fashion{
+            background-image:url("./public/images/Men-fashion.jpg");
+            background-size:cover;
+            width:600px;
+            height:400px;
+            border:1px solid blue;
+            position: relative;
+
+        }
+        .offer{
+            background-color:red;
+            color:white;
+            width:80px;
+            height:80px;
+            border-radius:80px;
+            text-align:center;
+            padding:10px;
+            font-size:28px;
+            font-weight:bold;
+            position:absolute;
+            top:20px;
+            right:20px;
+        }
+        nav{
+            margin:30px 0px 30px 0px;
+        }
+        button{
+            font-size:25px;
+            padding:10px;
+            position:relative;
+            border:none;
+            background-color:yellow;
+            border-radius:10px;
+        }
+        .badge{
+            display:inline-block;
+            width:15px;
+            height:15px;
+            background-color:red;
+            color:white;
+            padding:5px;
+            font-size:12px;
+            border-radius:20px;
+            position:absolute;
+            top:-10px;
+            right:-10px;
+        }
+    </style>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav>
+        <button class="bi bi-cart4"><span class="badge">2</span></button>
+    </nav>
+    <div class="Men-fashion">
+        <div class="offer">Save<br>40%</div>
+    </div>
+</body>
+</html>
