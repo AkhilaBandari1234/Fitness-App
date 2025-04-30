@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Women-Fashion{
+            background-image:url("./public/images/Women-Fashion.jpg");
+            background-size:cover;
+            width:500px;
+            height:300px;
+            z-index:0;
+        }
+        .Men-fashion{
+            background-image:url("./public/images/Men-fashion.jpg");
+            background-size:cover;
+            width:400px;
+            height:200px;
+            top:150px;
+            left:400px;
+            z-index:2;
+        }
+        .Kids-Fashion{
+            background-image:url("./public/images/Kids-Fashion.jpg");
+            background-size:cover;
+            width:300px;
+            height:200px;
+            left:300px;
+            top:0px;
+            z-index:1;
+        }
+        div{
+            box-shadow:5px 5px 2px black;
+            border-radius:20px;
+            position:absolute;
+            transition:5s;
+        }
+        div:hover{
+            z-index:2;
+            left:600px;
+            transition:5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="Women-Fashion">
+
+    </div>
+    <div class="Men-fashion">
+
+    </div>
+    <div class="Kids-Fashion"></div>
+</body>
+</html>
