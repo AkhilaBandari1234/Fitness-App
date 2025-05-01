@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            font-size:20px;
+            font-family:Arial;
+            padding:20px;
+        }
+        .brand-title{
+            font-size:24px;
+            font-weight:bold;
+        }
+        @media screen and (orientation:landscape){
+            header{
+                display:flex;
+                flex-direction:row;
+                justify-content:space-between;
+            }
+            nav span{
+                margin-right:30px;
+            }
+            .btn{
+                display:none;
+            }
+            .Women-Fashion{
+                background-image:url("./public/images/Women-Fashion.jpg");
+                background-size:cover;
+                width:150px;
+                height:200px;
+            }
+
+        }
+        @media screen and (orientation:portrait){
+            nav{
+                display:none;
+            }
+            .btn{
+                display:inline;
+                font-size:24px;
+            }
+            header{
+                display:flex;
+                justify-content:space-between;
+            }
+            .Women-Fashion{
+                background-image:url("./public/images/a1.jpg");
+                background-size: cover;
+        width: 100%;
+        height: 400px;
+            
+            }
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="brand-title">Shopper.</span>
+        </div>
+        <nav>
+            <span>Home</span>
+            <span>Shop</span>
+            <span>Pages</span>
+            <span>Blog</span>
+            <span>Docs</span>
+        </nav>
+        <div class="btn">
+            <span class="bi bi-justify"></span>     
+        </div>
+    </header>
+    <main>
+        <div class="Women-Fashion">
+
+        </div>
+    </main>
+</body>
+</html>
