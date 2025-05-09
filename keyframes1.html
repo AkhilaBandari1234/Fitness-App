@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        @keyframes Spin{
+            from{
+                transform:rotate(0deg);
+            }
+            to {
+                transform:rotate(360deg);
+            }
+        }
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        img{
+            animation-name:Spin;
+            animation-duration:2s;
+            animation-iteration-count:infinite;
+            animation-timing-function:linear;
+        }
+        img:active{
+            animation-duration:500ms;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./public/images/fan.jpg">
+    </div>
+</body>
+</html>
