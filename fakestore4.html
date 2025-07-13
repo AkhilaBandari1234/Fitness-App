@@ -1,0 +1,14 @@
+<script>
+     fetch(`https://fakestoreapi.com/products`)
+     .then(function(response){
+           return response.json();
+     })
+     .then(function(products){
+          for(var i=0; i<products.length; i++){
+               if(products[i].category==="electronics" || products[i].category==="jewelery"){
+                    continue;
+               }
+               document.write(`${products[i].title} - <b>${products[i].category}</b><br>`);
+          }
+     })
+</script>
