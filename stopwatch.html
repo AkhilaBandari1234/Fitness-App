@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 600px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            height: 60px;
+            margin-top: 200px;
+        }
+        .container div {
+            border:1px solid gray;
+            padding: 20px;
+            font-family: Arial;
+            font-size: 30px;
+            color:gray;
+        }
+    </style>
+    <script>
+        var ms = 0;
+        var s = 0;
+        var m = 0;
+        var h = 0;
+        function StopWatch(){
+            ms++;
+            if(ms===999){
+                s++;
+                ms=0;
+            }
+            if(s===59){
+                m++;
+                s=0;
+            }
+            if(m===59){
+                h++;
+                m=0;
+            }
+            document.getElementById("lblMilliSec").innerHTML = ms + "ms";
+            document.getElementById("lblSec").innerHTML = s + "s";
+            document.getElementById("lblMin").innerHTML = m + "m";
+            document.getElementById("lblhrs").innerHTML = h + "h";
+        }
+        var thread;
+        function StartClick(){
+           thread = setInterval(StopWatch,1);
+        }
+        function ClearClick(){
+            clearInterval(thread);
+            s=0;
+            ms=0;
+            h=0;
+            m=0;
+            document.getElementById("lblMilliSec").innerHTML = ms + "<sub>ms</sub>";
+            document.getElementById("lblSec").innerHTML = s + "<sub>s</sub>";
+            document.getElementById("lblMin").innerHTML = m + "m";
+            document.getElementById("lblhrs").innerHTML = h + "h";
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <div class="container">
+        <div>
+            <span  id="lblHrs">00 <sub>h</sub></span>
+        </div>
+        <div >
+            <span id="lblMin">00<sub>m</sub></span>
+        </div>
+        <div >
+            <span id="lblSec">00<sub>s</sub></span>
+        </div>
+        <div >
+            <span id="lblMilliSec">000<sub>ms</sub></span>
+        </div>
+       </div>
+       <br><br>
+       <button onclick="StartClick()">Start</button>
+       <button onclick="ClearClick()">Clear</button>
+    </div>
+</body>
+</html>
