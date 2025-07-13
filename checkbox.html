@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+        function SubmitClick(){
+            var courses = "";
+            var checkboxes = document.getElementsByName("Course");
+            for(var checkbox of checkboxes){
+                if(checkbox.checked){
+                    courses += checkbox.value + "<br>";
+                }
+            }
+            document.getElementById("lblList").innerHTML = courses;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <div><input type="checkbox" name="Course" value="HTML"> <label>HTML</label> </div>
+        <div><input type="checkbox" name="Course" value="Java"> <label>Java</label> </div>
+        <div><input type="checkbox" name="Course" value="Python"> <label>Python</label> </div>
+        <div><input type="checkbox" name="Course" value=".NET"> <label>.NET</label> </div>
+    </div>
+    <button onclick="SubmitClick()">Submit</button>
+    <p id="lblList"></p>
+</body>
+</html>
