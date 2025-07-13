@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <script>
+       var http = new XMLHttpRequest();
+       http.open('get', 'db.json', true) ;
+       http.send();
+       http.onreadystatechange= function(){
+        if(http.readyState===4){
+            console.log("hello",JSON.parse(http.responseText))
+            console.log(JSON.parse(http.responseText))
+        }
+       }
+     product.map(a=>a.image)
+    </script>
+    <img src="product.image"/>
+    
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Display Profile</title>
+</head>
+<body>
+  <div id="profile"></div>
+
+  <script>
+    var http = new XMLHttpRequest();
+    http.open('GET', 'db.json', true);
+    http.send();
+
+    http.onreadystatechange = function () {
+      if (http.readyState === 4 && http.status === 200) {
+        var product = JSON.parse(http.responseText);
+
+        var container = document.getElementById("profile");
+
+        var img1 = document.createElement("img");
+        img1.src = product.image;
+        img1.width = 300;
+
+        var name = document.createElement("h2");
+        name.textContent = product.name;
+
+        var age = document.createElement("p");
+        age.textContent = "Age: " + product.age;
+
+        container.appendChild(img1);
+        container.appendChild(name);
+        container.appendChild(age);
+      }
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,16 @@
+<script>
+    var Id=Symbol();
+    var product={
+        [Id]:2,
+        Name:"TV",
+        Price:45000,
+        Stock:true,
+        Rating:4.9
+
+    }
+    delete product.Rating;
+    Object.keys(product).map(function(key,index){
+        document.write(`${key}:${product[key]}<br>`);
+    })
+    document.write(`You are accessing product with Id=${product[Id]}`);
+    </script>

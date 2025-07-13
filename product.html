@@ -1,0 +1,19 @@
+<script>
+    var product={
+        Name:"Samsung TV",
+        Price:45000,
+        Qty:1,
+        Total: function(){
+            return this.Qty* this.Price;
+        },
+        Print:function(){
+            document.write(`Name=${this.Name}<br>Price=${this.Price}<br>Qty=${this.Qty}<br>Total=${this.Total()}<br>`);
+        }
+    }
+     product.Print();
+    document.write("<hr>")
+    product.Name="iPhone 16";
+    product.Price=70000;
+    product.Qty=2;
+     product.Print();
+</script>

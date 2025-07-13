@@ -1,0 +1,28 @@
+[
+    {
+        "title":"Apple iphone 16(pink,256GB)",
+        "price":79999,
+        "rating":{"rate":4.8,"ratings":26988,"reviews":317},
+        "offers":["Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C","Special PriceGet extra ₹9901 off(price inclusive of cashback/coupon) T&C","Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit Card T&C","Special PriceGet extra ₹9901 off (price inclusive of cashback/coupon)T&C"
+    ],
+    "image":"/public/images/iphone-16.jpg"
+    },
+    {
+        "title":"Apple iphone 16(white,128 GB)",
+        "price":60999,
+        "rating":{"rate":4.6,"ratings":16988,"reviews":717},
+        "offers":["Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
+    "Special Price Get extra ₹9901 off (price inclusive of cashback/coupon)T&C","Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C",
+"Special PriceGet extra ₹9901 off(price inclusive of cashback/coupon)T&C"],
+"image":"/public/images/iphone-16-white.jpg"
+    },
+    {
+        "title":"Apple iphone 16(pink,128 GB)",
+        "price":60999,
+        "rating":{"rate":4.6,"ratings":16988,"reviews":717},
+        "offers":["Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C","Special Price Get extra ₹9901 off (price inclusive of cashback/coupon)T&C","Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C","Special Price Get extra ₹9901 off (price inclusive of cashback/coupon)T&C"
+    ],
+        
+        "image":"/public/images/iphone-16-pink.jpg"
+    }
+]

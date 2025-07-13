@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function VerifyName(){
+            var username = document.getElementById("txtName").value;
+            var btnSubmit = document.getElementById("btnSubmit");
+            var lblName = document.getElementById("lblName");
+            if(username.length==0){
+                btnSubmit.disabled = true;
+                lblName.innerHTML = "User Name Required".fontcolor('red');
+            } else {
+                btnSubmit.disabled = false;
+                lblName.innerHTML = "";
+            }
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" onkeyup="VerifyName()" id="txtName"></dd>
+        <dd id="lblName"></dd>
+    </dl>
+    <button id="btnSubmit" disabled>Submit</button>
+</body>
+</html>

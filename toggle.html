@@ -4,25 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        function SortToggle(){
+            var btnSort=document.getElementById("btnSort");
+            btnSort.className=(btnSort.className=="bi bi-sort-alpha-down")?"bi bi-sort-alpha-up":"bi bi-sort-alpha-down";
+        }
+        function ShowClick(){
+            var btnShow=document.getElementById("btnShow");
+            btnShow.className=(btnShow.className=="bi bi-eye")?"bi bi-eye-slash":"bi bi-eye";
+            var txtPwd=document.getElementById("txtPwd");
+            txtPwd.type=(txtPwd.type=="text")?"password":"text";
+        }
+        function ToggleQuestion{
+            var q1=document.getElementById("q1");
+            q1.className=(q1.className==="d-none")?"d-block":"d-none";
+            var icon=document.getElementById("icon");
+            icon.className=(icon.className==="bi bi-plus")?"bi bi-dash":"bi bi-plus"
+        }
+    </script>
 </head>
 <body class="container-fluid">
-    <h2>Dropdown</h2>
-    <div class="dropend mt-4" data-bs-theme="dark">
-        <button data-bs-toggle="dropdown" class="btn btn-dark dropdown-toggle"> <span class="bi bi-person-circle"></span> Login </button>
-        <ul class="dropdown-menu">
-            <li > <a class="dropdown-item" href="../public/shopper-template.html" target="body-frame"> <span class="bi bi-cart4 dropdown-item-text"> Shop </span> </a> </li>
-            <li > <a class="dropdown-item"> <span class="bi bi-heart dropdown-item-text"> Wishlist </span> </a> </li>
-            <li > <a class="dropdown-item"> <span class="bi bi-gift dropdown-item-text"> Gift Card </span> </a> </li>
-            <li > <a class="dropdown-item"> <span class="bi bi-wallet dropdown-item-text"> Payments </span> </a> </li>
-            <li class="dropdown-divider"></li>
-            <li > <a class="dropdown-item"> <span class="bi bi-question-circle dropdown-item-text"> Help </span> </a> </li>
-        </ul>
-    </div>
-    <iframe width="100%" height="500" name="body-frame">
-
-    </iframe>
+    <h2>Toggle</h2>
+    <button id="btnSort" class="bi bi-sort-alpha-down" onclick="SortToggle()"></button>
+    <h2>Password</h2>
+    <input type="text" id="txtPwd"><button onclick="ShowClick" id="btnShow" class="bi bi-eye"></button>
+    <h2>Accordion</h2>
+    <button onclick="ToggleQuestion()" class="btn btn-dark w-100 d-flex justify-content-between"><span>What is Netflix?</span> <span id="icon" class="bi bi-plus"></span></button>
+    <div id="q1" align="justify" class="d-none">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure possimus necessitatibus iusto, repudiandae eum soluta quam repellat, dolore quod, aut expedita? Recusandae, iusto? Omnis, ab eos. Animi, dicta deserunt? 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corporis, dolore ipsam dolor impedit beatae debitis, repellendus dolorum architecto a velit maxime sit illo cumque sed expedita accusamus praesentium commodi?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, adipisci? Atque nihil ut doloribus in. Ut id, deserunt rem tempora, incidunt quisquam voluptas ex architecto minus odit laborum necessitatibus quos.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ad soluta natus labore obcaecati rerum ullam, cupiditate temporibus odit, tempore veritatis maiores enim molestias velit laborum dicta fugit. Eum, dicta.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptates officiis praesentium modi vero et voluptatum numquam officia ipsa explicabo eius nulla perspiciatis nisi quibusdam ex blanditiis quam, deserunt nobis.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla animi aliquid sint commodi vitae deleniti placeat maiores dolorum voluptates, officia corporis architecto mollitia. Non officiis necessitatibus, maxime incidunt voluptates quisquam.
+    </p>
+    </div>    
 </body>
 </html>

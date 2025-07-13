@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        function CheckedChange(){
+            var optShow=document.getElementById("optShow");
+            var imgPoster=document.getElementById("imgPoster");
+            imgPoster.className=(optShow.checked)?"d-block":"d-none";
+            var lblShow=document.getElementById("lblShow");
+            lblShow.innerHTML=(lblShow.innerHTML==="Show")?"Hide":"Show";
+        }
+    </script>
+</head>
+<body class="container-fluid">
+    <h2>Check</h2>
+    <input type="checkbox" onchange="CheckedChange()" id="optShow"> <label id="lblShow">Show</label>
+    <div id="imgPoster" class="d-none">
+        <img src="/public/images/Women-Fashion.jpg" width="200" height="200">
+    </div>
+</body>
+</html>

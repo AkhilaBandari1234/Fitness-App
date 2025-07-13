@@ -1,0 +1,31 @@
+<script>
+    var product={
+        Name:"TV",
+        Price:45000,
+        Stock:true,
+        Rating:4.9
+    }
+    Object.keys(product).map(function(key,index){
+        document.write(`${key}:${product[key]}<br>`);   
+    })
+</script>
+
+
+<!-- <ul id="itemList"></ul>
+
+<script>
+    var data = {
+        Name: "TV",
+        Price: 45000,
+        Stock: true,
+        Rating: 4.9
+    };
+
+    var ul = document.getElementById("itemList");
+
+    Object.keys(data).forEach(function(key) {
+        var li = document.createElement("li");
+        li.textContent = key + ": " + data[key];
+        ul.appendChild(li);
+    });
+</script> -->

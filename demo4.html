@@ -1,0 +1,36 @@
+<!-- <script>
+    var http=new XMLHttpRequest();
+    http.open("get","../data/ab.json",true);
+    http.send();
+
+    http.onreadystatechange=function(){
+        if(http.readyState===4){
+            console.log(JSON.parse(http.responseText));
+        }
+    }
+</script> -->
+<!-- <script>
+    var http =  new XMLHttpRequest();
+    http.open('get', 'https://fakestoreapi.com/products', true);
+    http.send();
+    http.onreadystatechange = function (){
+        if(http.readystate ===4){
+            console.log(JSON.parse(http.responseText))
+            console.log("hiiii", JSON.parse(http.responseText))
+        }
+    }
+</script> -->
+
+<script>
+  var http = new XMLHttpRequest();
+  http.open('GET', 'ab.json', true);
+  http.send();
+
+  http.onreadystatechange = function () {
+    if (http.readyState === 4 && http.status === 200) {
+      var data = JSON.parse(http.responseText);
+      console.log(data);  // full product list
+      console.log("hiiii", data); // your debug log
+    }
+  };
+</script>
