@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        var i=1;
+        function StartProgress(){
+            i++;
+            document.getElementById("progress").value = i;
+            document.getElementById("lblStatus").innerHTML = `${i}% completed`;
+            if(i===100){
+                document.getElementById("imgContainer").style.display = "block";
+                document.getElementById("progressContainer").style.display = "none";
+                clearInterval(thread);
+            }
+        }
+        var thread;
+        function LoadClick(){
+            document.getElementById("btnContainer").style.display = "none";
+            document.getElementById("progressContainer").style.display = "block";
+            thread = setInterval(StartProgress,100);
+        }
+
+    </script>
+    <style>
+        @keyframes Fade {
+            from {
+                opacity: 0;
+                transform: scale(0.1) rotate(0deg);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) rotate(360deg);
+            }
+        }
+        img {
+            animation-name: Fade;
+            animation-duration: 5s;
+        }
+    </style>
+</head>
+<body class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="text-center">
+        <div id="btnContainer">
+            <button class="btn btn-primary" onclick="LoadClick()">Load Image</button>
+        </div>
+        <div id="progressContainer" style="display: none;">
+            <progress id="progress" min="1" max="100" style="width: 400px; height: 30px;"></progress>
+            <p id="lblStatus"></p>
+        </div>
+        <div id="imgContainer" style="display: none;">
+            <img src="/public/images/women-fashion.jpg" width="400" height="400">
+        </div>
+    </div>
+</body>
+</html>
