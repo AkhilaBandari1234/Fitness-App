@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script>
+        function Time(){
+            var now = new Date();
+            var time = now.toLocaleTimeString();
+            document.querySelector("h1").innerHTML = time;
+        }
+        var thread;
+        function bodyload(){
+           thread = setInterval(Time,1000);
+        }
+        function StartClick(){
+            thread = setInterval(Time,1000);
+        }
+        function StopClick(){
+            clearInterval(thread);
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <h1 align="center"></h1>
+    <button onclick="StartClick()">Start</button>
+    <button onclick="StopClick()">Stop</button>
+</body>
+</html>
