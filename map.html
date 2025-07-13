@@ -1,0 +1,22 @@
+<script>
+    var data = new Map();
+    data.set(1, "TV");
+    data.set("Mobile", "Apple iPhone 16 Pro");
+    data.set(2, ["Delhi", "Hyd"]);
+
+     data.delete(2);
+
+    if(data.has(2)){
+        document.write(data.get(2));
+    } else {
+        alert('2 Not Found');
+    }
+
+    document.write(`${data.get("Mobile")}<br>`);
+
+    for(var item of data.entries()){
+        document.write(`${item}<br>`);
+    }
+
+    document.write(`Total Count of Keys : ${data.size}`);
+</script>
