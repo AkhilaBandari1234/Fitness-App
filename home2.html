@@ -1,34 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <script>
-            function BodyLoad(){
-                pic.src="/public/images/Kids-Fashion.jpg";
-                frmLogin.btnLogin.value="Register";
-            }
-        </script>
-    </head>
-    <body onload="BodyLoad()">
-        <div>
-            <img width="100" height="100" name="pic">
-        </div>
-        <div>
-            <form name="frmLogin">
-                <h3>User Login</h3>
-                <input type="text" name="txtName" placeholder="User Name">
-                <input type="password" name="txtPwd" placeholder="Password">
-                <input type="button" name="btnLogin">
-            </form>
-        </div>
-        <div>
-            <form name="frmRegister">
-                <h3>Register</h3>
-                <input type="email" placeholder="Your Email">
-                <input type="button" name="btnRegister">
-            </form>
-        </div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Page</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            border:1px solid gray;
+            padding: 20px;
+        }
+    </style>
+    <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="../node_modules/@babel/standalone/babel.js"></script>
+    <script type="text/babel">
+
+        function Login()
+        {
+            return(
+                <div>
+                    <h2>User Login</h2>
+                    <dl>
+                     <dt>User Name </dt>
+                     <dd><input type="text" /></dd>    
+                     <dt>Password </dt> 
+                     <dd><input type="password" /></dd>
+                    </dl>
+                    <button>Login</button>
+                </div>
+            )
+        }
+
+        function SearchBar(){
+            return(
+                <div>
+                    <input type="text" placeholder="Search Amazon.in" />
+                    <button>Search</button>
+                </div>
+            )
+        }
+        function NavBar(){
+            return(
+                <nav>
+                <span>Amazon </span>
+                <SearchBar />
+                <span>Home</span>
+                <span>About</span>
+                <span>Contact</span>
+                </nav>
+            )
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(
+             <div>
+                <NavBar/>
+                <Login />
+             </div>
+            );
+    </script>
+</head>
+<body>
+    <noscript>Please enable JavaScript on your browser.</noscript>
+    <div id="root"></div>
+</body>
 </html>
